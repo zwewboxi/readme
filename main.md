@@ -43,9 +43,6 @@ def hello():
     return "Hello World"
 \```
 
-#### 纯文本代码块
-
-
 
 # 表格
 | 左对齐 | 居中对齐 | 右对齐 |
@@ -95,27 +92,4 @@ $$
 a & b \\
 c & d
 \end{bmatrix}
-$$
-
-#### 分段函数
-$$
-f(x) = 
-\begin{cases}
-x^2 & \text{if } x \geq 0 \\
--x & \text{if } x < 0
-\end{cases}
-$$
-
-#### 希腊字母
-$\alpha, \beta, \gamma, \Gamma, \Delta$
-
-# 链接
-[显示文本](URL "标题")
-[锚点链接](#章节名称)
-
-#### 引用式链接
-[GitHub][1]
-[Google][2]
-
-[1]: https://github.com
 [2]: https://google.com
