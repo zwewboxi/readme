@@ -30,24 +30,6 @@
 - [x] 已完成任务
 - [ ] 未完成任务
 
-# 引用与代码块
-> 引用文本
-> 多行引用
-
-> 引用文本
-> 多行引用
-
-#### 单行代码
-`print("Hello World")`
-
-#### 多行代码（指定语言）
-```python
-def hello():
-    return "Hello World"
-\```
-
-#### 纯文本代码块
-
 
 # 表格
 | 左对齐 | 居中对齐 | 右对齐 |
@@ -98,3 +80,18 @@ a & b \\
 c & d
 \end{bmatrix}
 [2]: https://google.com
+
+
+> 引用文本
+> 多行引用
+
+#### 单行代码
+`print("Hello World")`
+
+#### 多行代码（指定语言）
+```python
+def hello():
+    return "Hello World"
+\```
+
+#### 纯文本代码块
