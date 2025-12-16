@@ -1,4 +1,4 @@
-# Qwen3-Next 模型架构
+# 25.12.26汇报 Qwen3-Next 模型架构
 
 ## 1. 整体架构
 - **总层数**: 48层 = 12 × (3层Gated DeltaNet + 1层Gated Attention)的重复结构
