@@ -1,4 +1,4 @@
-# 25.12.26汇报 Qwen3-Next 模型架构
+# 25.12.16汇报 Qwen3-Next 模型架构
 
 ## 1. 整体架构
 - **总层数**: 48层 = 12 × (3层Gated DeltaNet + 1层Gated Attention)的重复结构
@@ -85,6 +85,10 @@ for t = 1 to L:
 ```python
 O = stack([O_t for t in 1..L], dim=1)  # [B, L, 32, 128]
 ```
+
+### 对比标准注意力方法
+- `标准注意力`  ：O(B*L^2*d), KV缓存
+- `Gated DeltaNet线性注意力` ：O(B*L*d^2), 存储状态S
 
 ## 3. Gated Attention 结构
 > 进行补充
