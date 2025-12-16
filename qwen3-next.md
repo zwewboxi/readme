@@ -87,8 +87,8 @@ O = stack([O_t for t in 1..L], dim=1)  # [B, L, 32, 128]
 ```
 
 ### 对比标准注意力方法
-- `标准注意力`  ：O(B*L^2*d), KV缓存
-- `Gated DeltaNet线性注意力` ：O(B*L*d^2), 存储状态S
+- `标准注意力`  ：O(B * L^2 * d), KV缓存
+- `Gated DeltaNet线性注意力` ：O(B * L * d^2), 存储状态S
 
 ## 3. Gated Attention 结构
 > 进行补充
