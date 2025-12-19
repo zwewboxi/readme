@@ -12,7 +12,7 @@
 | **FireRed-ASR-LLM** | **8.3B** | 小红书 | √ | Apache License 2.0 |     | 支持普通话、中国方言和英语 |     |     | Encoder-Adapter-LLM架构，集成LLM能力以追求SOTA精度。 |
 | **FireRed-ASR-AED** | **1.1B** | 小红书 | √ | Apache License 2.0 |     | 支持普通话、中国方言和英语 |     |     | Conformer编码器+Transformer解码器 (AED)架构，在效率与精度间平衡。 |
 | **Paraformer** |      | 阿里 | √ |   | √ | 支持多语种，涵盖英语、法语、德语、西班牙语等 | ✕ | √ | 非自回归模型，注重大规模工业级语料上的噪声鲁棒性，追求高推理速度。 |
-| **seamless-m4t-large-v2** | **2.3B** | Meta | √ |   | ✕ | 支持近100种语言的语音和文本互译 |     |     | 多任务统一模型，专注于多语言语音翻译与识别。 |
+| **seamless-m4t-large-v2** | **2.3B** | Meta | √ | cc-by-nc-4.0 | ✕ | 支持近100种语言的语音和文本互译 |     |     | 多任务统一模型，专注于多语言语音翻译与识别。 |
 
 ---
 
