@@ -80,7 +80,7 @@ for t = 1 to L:
     # 计算输出
     O_t = Q_t @ S  # [B, 32, 128]
 ```
-![RUNOOB图标](https://img-blog.csdnimg.cn/img_convert/5f192225c466ee7ff1ec1b90363b8c4c.png width = 60%)
+https://img-blog.csdnimg.cn/img_convert/5f192225c466ee7ff1ec1b90363b8c4c.png{:width="60%"}
 
 #### 步骤3: 合并所有时间步
 ```python
