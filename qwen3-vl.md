@@ -1,7 +1,12 @@
 ## 26.1月汇报  qwen3-vl
 
-## 1.模型架构
-<img src="images/qwen3vl_arc.jpg" width = 60%>
+## **1.模型架构**
+<img src="images/qwen3vl_arc.jpg" width = 90%>
 
+### **1.1视觉编码器**
+### **1.2MLP视觉语言合并器**
+### **1.3大语言模型**
 
-## 2.
+## 2.预训练阶段
+
+## 3.后训练阶段
