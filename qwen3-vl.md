@@ -15,7 +15,7 @@
 ### 2、频率向量计算
 
 对于维度 i（0 ≤ i < d_model/2），频率计算公式为：  
-φ<sub>i</sub> = base<sup>-2i/d_model</sup>
+- φ<sub>i</sub> = base<sup>-2i/d_model</sup>
 
 当 d_model=8 时，共有4个频率（对应4组复数对）：
 
@@ -29,7 +29,7 @@
 ### 3、旋转角度计算
 
 对于位置 (row, col)，每个维度的旋转角度为：   
-φ<sub>i</sub> = row × θ<sub>i</sub> + col × θ<sub>i</sub>
+- φ<sub>i</sub> = row × θ<sub>i</sub> + col × θ<sub>i</sub>
 
 **位置0 (1,2)：**
 - φ₀ = 1×1 + 2×1 = 3
