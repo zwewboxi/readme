@@ -15,7 +15,7 @@
 ### 2、频率向量计算
 
 对于维度 i（0 ≤ i < d_model/2），频率计算公式为：  
-θ_i = base<sup>-2i/d_model</sup>
+θ<sub>_</sub>i = base<sup>-2i/d_model</sup>
 
 当 d_model=8 时，共有4个频率（对应4组复数对）：
 
