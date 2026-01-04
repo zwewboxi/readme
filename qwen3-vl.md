@@ -29,7 +29,8 @@
 ### 3、旋转角度计算
 
 对于位置 (row, col)，每个维度的旋转角度为：  
-φ<sub>_</sub>i = row × θ<sub>_</sub>i + col × θ<sub>_</sub>i
+φ_i = row × θ_i + col × θ_i
+φ<sub>i</sub> = row × θ<sub>i</sub> + col × θ<sub>i</sub>
 
 **位置0 (1,2)：**
 - φ₀ = 1×1 + 2×1 = 3
@@ -49,14 +50,6 @@
 [(q₀, q₁), (q₂, q₃), (q₄, q₅), (q₆, q₇)]
 
 对每个复数对应用旋转矩阵：
-
-```
-⎡ q'_{2i}  ⎤   ⎡ cos φ_i  -sin φ_i ⎤ ⎡  q_{2i}  ⎤
-⎢          ⎥ = ⎢                   ⎥ ⎢          ⎥
-⎣ q'_{2i+1}⎦   ⎣ sin φ_i   cos φ_i ⎦ ⎣ q_{2i+1} ⎦
-```
-
-等价于：
 ```
 q'_{2i}   = q_{2i} cos φ_i - q_{2i+1} sin φ_i
 q'_{2i+1} = q_{2i} sin φ_i + q_{2i+1} cos φ_i
