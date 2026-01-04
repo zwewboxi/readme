@@ -16,6 +16,9 @@
 
 对于维度 i（0 ≤ i < d_model/2），频率计算公式为：  
 θ_i = base^(-2i/d_model)
+$$
+\theta_i = \text{base}^{-2i/\text{d_model}}
+$$
 
 当 d_model=8 时，共有4个频率（对应4组复数对）：
 
@@ -55,6 +58,22 @@
 ⎢          ⎥ = ⎢                   ⎥ ⎢          ⎥
 ⎣ q'_{2i+1}⎦   ⎣ sin φ_i   cos φ_i ⎦ ⎣ q_{2i+1} ⎦
 ```
+对每个复数对应用旋转矩阵：
+$$
+\begin{bmatrix}
+q'_{2i} \\
+q'_{2i+1}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos \phi_i & -\sin \phi_i \\
+\sin \phi_i & \cos \phi_i
+\end{bmatrix}
+\begin{bmatrix}
+q_{2i} \\
+q_{2i+1}
+\end{bmatrix}
+$$
 
 等价于：
 ```
