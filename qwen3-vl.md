@@ -171,6 +171,14 @@ s_w = (N_pretrain + 1) / (N_new + 1) = 24/670 ≈ 0.03582
 φ_w(j,d) = j · θ_w,d^new
 ```
 
+### 3.6 MRoPE计算
+将视频切分成多个时间帧，对于位置(t,i,j)的patch，其RoPE旋转角度为：
+```
+φ_t(t,d) = t · θ_t,d^new
+φ_h(i,d) = i · θ_h,d^new
+φ_w(j,d) = j · θ_w,d^new
+```
+
 ## 四. Vision Encoder内部结构和DeepStack处理
 
 ### 4.1 Vision Encoder (SigLIP-2) 结构
