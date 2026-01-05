@@ -175,7 +175,7 @@ s_w = (N_pretrain + 1) / (N_new + 1) = 24/670 ≈ 0.03582
 
 ### 4.1 Vision Encoder (SigLIP-2) 结构
 SigLIP-2是Vision Transformer (ViT) 架构：
-
+<img src="images/vit.png" width="90%">
 1. **Patch嵌入层**：
    ```
    输入 ∈ ℝ^(3×H×W) → Patch投影 ∈ ℝ^(N×D)
