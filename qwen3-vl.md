@@ -29,7 +29,7 @@ $$\theta_{i}=base^{-\frac{2i}{d_{model}}}$$
 ### 3、旋转角度计算
 
 对于位置 (row, col)，每个维度的旋转角度为：   
-$$φ_{i}=row\times\theta_{i}+\col\times\theta_{i}$$
+$$φ_{i}=row\times\theta_{i}+col\times\theta_{i}$$
 
 **位置0 (1,2)：**
 - φ₀ = 1×1 + 2×1 = 3
