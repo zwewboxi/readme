@@ -89,7 +89,7 @@ $q^{\prime}$ = [
 ]
 
 ### 6、注意力分数计算
-$$score=q^{\prime}\cdot k^{\prime}=\sum q^_{i}{\prime}\times k_{i}^{\prime}$$
+$$score = q^{\prime}\cdot k^{\prime}=\sum q_{i}{\prime}\times k_{i}^{\prime}$$
 
 #### a. 计算位置1的键向量旋转
 
@@ -151,8 +151,12 @@ $s_{w}$ = ($N_{pretrain}$ + 1) / ($N_{new}$ + 1) = 24/670 ≈ 0.03582
 
 ### 3.4 调整后的频率基
 新的频率基通过原始频率基的幂运算得到：
-$$\theta_{h},d^{new}=\theta_{d}^{s_{h}=(10000^{-\frac{2i}{D}})^{s_{h}}=10000^{-\frac{2i\cdot s_{h}}{D}}$$     
-$$\theta_{w},d^{new}=\theta_{d}^{s_{w}=(10000^{-\frac{2i}{D}})^{s_{w}}=10000^{-\frac{2i\cdot s_{w}}{D}}$$
+$$
+\theta_{h,i}^{\text{new}} = \theta_i^{s_h} = \left(10000^{-\frac{2i}{D}}\right)^{s_h} = 10000^{-\frac{2i s_h}{D}}
+$$
+$$
+\theta_{w,i}^{\text{new}} = \theta_i^{s_w} = \left(10000^{-\frac{2i}{D}}\right)^{s_w} = 10000^{-\frac{2i s_w}{D}}
+$$
 
 ### 3.5 位置编码计算
 对于位置(i,j)的patch，其RoPE旋转角度为：
