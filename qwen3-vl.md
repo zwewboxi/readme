@@ -54,6 +54,7 @@
 q'_{2i}   = q_{2i} cos φ_i - q_{2i+1} sin φ_i
 q'_{2i+1} = q_{2i} sin φ_i + q_{2i+1} cos φ_i
 ```
+<img src="images/RoPE.png" width="90%">
 
 ### 5、实例计算（位置0）
 
