@@ -46,14 +46,13 @@ $$φ_{i}=row\times\theta_{i}+col\times\theta_{i}$$
 ### 4、旋转矩阵应用
 
 将8维嵌入向量视为4个复数对：  
-```
 [($q_{0}$, $q_{1}$), ($q_{2}$, $q_{3}$), ($q_{4}$, $q_{5}$), ($q_{6}$, $q_{7}$)]
-```
+
 对每个复数对应用旋转矩阵：
-```
+
 $$q_{2i}^{\prime}=q_{2i}\cos\varphi_{i}-q_{2i+1}\sin\varphi_{i}$$
 $$q_{2i+1}^{\prime}=q_{2i}\sin\varphi_{i}+q_{2i+1}\cos\varphi_{i}$$
-```
+
 <img src="images/RoPE.png" width="90%">
 
 ### 5、实例计算（位置0）
