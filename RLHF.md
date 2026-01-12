@@ -28,7 +28,6 @@ PPO 的目标函数由三部分组成：**策略损失**、**价值损失**和**
 $$
 L^{CLIP}(\theta) = \hat{\mathbb{E}}_t \left[ \min\left(r_t(\theta) A_t, \operatorname{clip}\left(r_t(\theta), 1-\epsilon, 1+\epsilon\right) A_t\right) \right] - c_1 L^{VF}(\theta) + c_2 S[\pi_\theta]
 $$
-
 $$
 L_{DPO}(\pi_\theta; \pi_{ref}) = -\mathbb{E}_{(x, y_w, y_l) \sim \mathcal{D}} \left[ \log \sigma \left( \beta \left( \log \frac{\pi_\theta(y_w|x)}{\pi_\theta(y_l|x)} - \log \frac{\pi_{ref}(y_w|x)}{\pi_{ref}(y_l|x)} \right) \right) \right]
 $$
