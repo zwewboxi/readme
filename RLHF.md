@@ -26,8 +26,13 @@ PPO 是强化学习中最经典的**策略梯度算法**，也是早期大模型
 
 PPO 的目标函数由三部分组成：**策略损失**、**价值损失**和**熵奖励**，最常用的是 **Clip 版本**：      
 
-$$L^{CLIP}(\theta)=\hat{\mathbb{E}}_t\left[\min(r_t(\theta)A_t,\operatorname{clip}(r_t(\theta),1-\epsilon,1+\epsilon)A_t)\right]-c_1L^{VF}(\theta)+c_2S[\pi_\theta](s_t)$$
+$$
+L^{CLIP}(\theta)=\hat{\mathbb{E}}_t\left[\min(r_t(\theta)A_t,\operatorname{clip}(r_t(\theta),1-\epsilon,1+\epsilon)A_t)\right]-c_1L^{VF}(\theta)+c_2S[\pi_\theta](s_t)
+$$
 
+$$
+L_{DPO}(\pi_\theta; \pi_{ref}) = -\mathbb{E}_{(x, y_w, y_l) \sim \mathcal{D}} \left[ \log \sigma \left( \beta \left( \log \frac{\pi_\theta(y_w|x)}{\pi_\theta(y_l|x)} - \log \frac{\pi_{ref}(y_w|x)}{\pi_{ref}(y_l|x)} \right) \right) \right]
+$$
 
 #### C. 参数含义
 
