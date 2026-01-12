@@ -34,6 +34,10 @@ $$
 L^{CLIP}(\theta) = \hat{E}_t \left[ \min(r_t(\theta) A_t, \mathrm{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) A_t) \right] - c_1 L^{VF}(\theta) + c_2 S[\pi_\theta](s_t)
 $$
 
+$$
+Q(s_t,a_t)-V(s_t)
+$$
+
 #### C. 参数含义
 
 |参数|具体含义|
